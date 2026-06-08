@@ -15,6 +15,9 @@ const DashboardPage = () => {
 
   const { filteredItems } = useSearch(videos);
   const { currentItems, currentPage, totalPages, setPage } = usePagination(filteredItems);
+  console.log("Search Query:", state.searchQuery);
+console.log("Total Videos:", videos.length);
+console.log("Filtered Videos:", filteredItems.length);
 
   useEffect(() => {
     const fetchVideos = async () => {

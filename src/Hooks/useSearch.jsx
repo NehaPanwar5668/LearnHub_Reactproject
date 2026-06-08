@@ -3,6 +3,7 @@ import { AppContext } from '../context/AppContext';
 
 export const useSearch = (items) => {
   const context = useContext(AppContext);
+
   if (!context) {
     throw new Error('useSearch must be used within AppProvider');
   }
@@ -11,17 +12,21 @@ export const useSearch = (items) => {
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
+      const title = item.snippet?.title?.toLowerCase() || '';
+      const description = item.snippet?.description?.toLowerCase() || '';
+      const channelTitle = item.snippet?.channelTitle?.toLowerCase() || '';
+
+      const query = searchQuery.toLowerCase();
+
       const matchesSearch =
         !searchQuery ||
-        item.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.content?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.channelTitle?.toLowerCase().includes(searchQuery.toLowerCase());
+        title.includes(query) ||
+        description.includes(query) ||
+        channelTitle.includes(query);
 
       const matchesCategory =
         selectedCategory === 'all' ||
-        item.category === selectedCategory ||
-        !item.category;
+        title.includes(selectedCategory.toLowerCase());
 
       return matchesSearch && matchesCategory;
     });
