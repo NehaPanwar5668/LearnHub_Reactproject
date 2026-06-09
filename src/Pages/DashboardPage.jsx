@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+const API_KEYS = import.meta.env.VITE_YOUTUBE_API_KEY;
 import React, { useState, useEffect } from 'react';
 import { useContext } from 'react';
 import axios from 'axios';
@@ -44,7 +44,7 @@ console.log("Filtered Videos:", filteredItems.length);
                 part: 'snippet',
                 maxResults: 6,
                 type: 'video',
-                key: API_KEY,
+                key: API_KEYS,
               },
             });
 
