@@ -24,7 +24,7 @@ const NotesPage = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">📝 My Notes</h1>
-          <p className="text-gray-600">Manage and organize all your study notes</p>
+          <p className="text-gray-500">Manage and organize all your study notes</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
