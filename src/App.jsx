@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AppProvider } from './Context/AppContext';
 import Header from './Components/Header';
-import { LoginPage, DashboardPage, VideoPage, NotesPage, BookmarksPage } from './pages';
+import { LoginPage, DashboardPage, VideoPage, NotesPage, BookmarksPage } from './Pages';
 
 function App() {
   return (
