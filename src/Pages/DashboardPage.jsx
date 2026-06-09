@@ -2,10 +2,10 @@ const API_KEYS = import.meta.env.VITE_YOUTUBE_API_KEY;
 import React, { useState, useEffect } from 'react';
 import { useContext } from 'react';
 import axios from 'axios';
-import { AppContext } from '../context/AppContext';
-import { useSearch } from '../hooks';
-import { usePagination } from '../hooks';
-import { VideoCard, SearchBar, CategoryFilter, Pagination } from '../components';
+import { AppContext } from '../Context/AppContext';
+import { useSearch } from '../Hooks';
+import { usePagination } from '../Hooks';
+import { VideoCard, SearchBar, CategoryFilter, Pagination } from '../Components';
 
 const DashboardPage = () => {
   const { state } = useContext(AppContext);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { AppProvider } from './context/AppContext';
-import Header from './components/Header';
+import { AppProvider } from './Context/AppContext';
+import Header from './Components/Header';
 import { LoginPage, DashboardPage, VideoPage, NotesPage, BookmarksPage } from './pages';
 
 function App() {

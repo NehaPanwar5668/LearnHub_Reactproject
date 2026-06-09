@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../hooks';
-import { SearchBar, CategoryFilter, NotesList } from '../components';
+import { useAuth } from '../Hooks';
+import { SearchBar, CategoryFilter, NotesList } from '../Components';
 
 const NotesPage = () => {
   const { isAuthenticated } = useAuth();

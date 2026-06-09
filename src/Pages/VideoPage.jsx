@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect, useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../Context/AppContext';
 
 const VideoPage = () => {
   const { videoId } = useParams();

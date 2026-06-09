@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
-import { useSearch } from '../hooks';
-import { usePagination } from '../hooks';
+import { AppContext } from '../Context/AppContext';
+import { useSearch } from '../Hooks';
+import { usePagination } from '../Hooks';
 
 const NotesList = () => {
   const { state, deleteNote } = useContext(AppContext);

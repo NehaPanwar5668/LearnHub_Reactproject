@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../hooks';
+import { useAuth } from '../Hooks';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');

@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../Context/AppContext';
 
 const VideoCard = ({ video }) => {
   const { state, addBookmark, removeBookmark } = useContext(AppContext);

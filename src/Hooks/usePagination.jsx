@@ -1,5 +1,5 @@
 import { useContext, useMemo } from 'react';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../Context/AppContext';
 
 export const usePagination = (items) => {
   const context = useContext(AppContext);

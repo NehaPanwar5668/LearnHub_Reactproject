@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect, useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../Context/AppContext';
 
 const SearchBar = () => {
   const { state, setSearchQuery } = useContext(AppContext);

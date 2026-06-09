@@ -1,10 +1,10 @@
 import React, { useContext, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../hooks';
-import { AppContext } from '../context/AppContext';
-import { useSearch } from '../hooks';
-import { usePagination } from '../hooks';
-import { SearchBar, CategoryFilter, Pagination } from '../components';
+import { useAuth } from '../Hooks';
+import { AppContext } from '../Context/AppContext';
+import { useSearch } from '../Hooks';
+import { usePagination } from '../Hooks';
+import { SearchBar, CategoryFilter, Pagination } from '../Components';
 
 const BookmarksPage = () => {
   const { isAuthenticated } = useAuth();
